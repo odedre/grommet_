@@ -12,7 +12,7 @@ const COLOR_INDEX = CSSClassnames.COLOR_INDEX;
 /**
  * @description Value component, focusing on a single number.
  * 
- * ```js
+ * @example
  * import Value from 'grommet/components/Value';
  * 
  * <Value value={75}
@@ -22,7 +22,7 @@ const COLOR_INDEX = CSSClassnames.COLOR_INDEX;
  *   units='%'
  *   responsive={true}
  *   reverse={true} />
- * ```
+ * 
  */
 export default class Value extends Component {
 
@@ -133,7 +133,7 @@ Value.propTypes = {
    */
   responsive: PropTypes.bool,
   /**
-   * @property {['xsmall', 'small', 'medium', 'large', 'xlarge']} size - The size of the value. Defaults to medium.
+   * @property {xsmall|small|medium|large|xlarge} size - The size of the value. Defaults to medium.
    */
   size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
   /**

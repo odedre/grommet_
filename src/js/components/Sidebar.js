@@ -13,7 +13,7 @@ const CLASS_ROOT = CSSClassnames.SIDEBAR;
  * 
  * Properties for [Box](#) are also available.
  * 
- * ```js
+ * @example
  * import Sidebar from 'grommet/components/Sidebar';
  * 
  * <Sidebar colorIndex='neutral-1'
@@ -72,7 +72,7 @@ Sidebar.propTypes = {
    */
   fixed: PropTypes.bool,
   /**
-   * @property {['xsmall', 'small', 'medium', 'large']} size - The size of the Sidebar. Defaults to medium.
+   * @property {xsmall|small|medium|large} size - The size of the Sidebar. Defaults to medium.
    */
   size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large']),
   /**

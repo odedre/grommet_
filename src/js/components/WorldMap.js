@@ -158,12 +158,12 @@ const coordToLatLon = (coord, origin, extent) => {
  * 
  * Note: It is a good idea to include a Legend along with this visualization. You can use the same seriesproperty for both WorldMap and Legend.
  * 
- * ```js
+ * @example
  * import WorldMap from 'grommet/components/WorldMap';
  * 
  * <WorldMap onSelectPlace={...}
  *   zoom={true} />
- * ```
+ * 
  */
 export default class WorldMap extends Component {
 

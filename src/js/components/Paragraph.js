@@ -10,7 +10,7 @@ const CLASS_ROOT = CSSClassnames.PARAGRAPH;
 /**
  * @description A paragraph of text
  * 
- * ```js
+ * @example
  * import Paragraph from 'grommet/components/Paragraph';
  * 
  * <Paragraph>
@@ -18,7 +18,7 @@ const CLASS_ROOT = CSSClassnames.PARAGRAPH;
  * gets a fresh start in the New Zealand countryside. He quickly finds himself
  * at home with his new foster family
  * </Paragraph>
- * ```
+ * 
  */
 export default class Paragraph extends Component {
   render () {
@@ -46,15 +46,15 @@ export default class Paragraph extends Component {
 
 Paragraph.propTypes = {
   /**
-   * @property {['start', 'center', 'end']} align - Text alignment. Defaults to inherit.
+   * @property {start|center|end} align - Text alignment. Defaults to inherit.
    */
   align: PropTypes.oneOf(['start', 'center', 'end']),
   /**
-   * @property {['none', 'small', 'medium', 'large']} margin - Vertical margin.
+   * @property {none|small|medium|large} margin - Vertical margin.
    */
   margin: PropTypes.oneOf(['none', 'small', 'medium', 'large']),
   /**
-   * @property {['small', 'medium', 'large', 'xlarge']} size - The size of the Paragraph text. Defaults to medium.
+   * @property {small|medium|large|xlarge} size - The size of the Paragraph text. Defaults to medium.
    */
   size: PropTypes.oneOf(['small', 'medium', 'large', 'xlarge']),
   width: PropTypes.oneOf(['small', 'medium', 'large'])

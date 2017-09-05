@@ -191,7 +191,7 @@ Parts.defaultProps = {
 /**
  * @description Visualize structure and connectivity.
  * 
- * 
+ * @example
  * import Topology from 'grommet/components/Topology';
  * 
  * <Topology a11yTitle='Server Topology'

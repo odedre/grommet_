@@ -25,11 +25,11 @@ function _showField(field, fields) {
  * 
  * @description A localized timestamp.
  * 
- * ```js
+ * @example
  * import Timestamp from 'grommet/components/Timestamp';
  * 
  * <Timestamp value='2017-08-30T13:31:08.515Z' />
- * ```
+ * 
  */
 export default class Timestamp extends Component {
 
@@ -160,7 +160,7 @@ const FIELD_TYPES = PropTypes.oneOf([
 
 Timestamp.propTypes = {
   /**
-   * @property {['start', 'center', 'end']} align - The horizontal alignment of the Timestamp.
+   * @property {start|center|end} align - The horizontal alignment of the Timestamp.
    */
   align: PropTypes.oneOf(['start', 'center', 'end']),
   /**

@@ -18,7 +18,7 @@ const BACKGROUND_COLOR_INDEX = CSSClassnames.BACKGROUND_COLOR_INDEX;
  * 
  * Callers must include child <source> elements according to the HTML5 <video> specification.
  * 
- * ```js
+ * @example
  * import Video from 'grommet/components/Video';
  * 
  * <Video autoPlay={true}
@@ -33,7 +33,7 @@ const BACKGROUND_COLOR_INDEX = CSSClassnames.BACKGROUND_COLOR_INDEX;
  *   <source src='/video/test.mp4'
  *     type='video/mp4' />
  * </Video>
- * ```
+ * 
  */
 export default class Video extends Component {
 
@@ -340,11 +340,11 @@ Video.propTypes = {
    */
   colorIndex: PropTypes.string,
   /**
-   * @property {['contain', 'cover']} fit - How the video should be scaled to fit in the container. Setting this property also sets full='true'.
+   * @property {contain|cover} fit - How the video should be scaled to fit in the container. Setting this property also sets full='true'.
    */
   fit: PropTypes.oneOf(['contain', 'cover']),
   /**
-   * @property {Proptypes.bool| horizontal| vertical} full - Whether the image should expand to fill the available width and/or height.
+   * @property {Proptypes.bool|horizontal|vertical} full - Whether the image should expand to fill the available width and/or height.
    */
   full: PropTypes.oneOf([true, 'horizontal', 'vertical', false]),
   /**
@@ -376,7 +376,7 @@ Video.propTypes = {
    */
   showControls: PropTypes.bool,
   /**
-   * @property {['small', 'medium', 'large']} size - The width of the Video. Defaults to medium unless the full option is specified. The height will adapt to the aspect ratio of the video.
+   * @property {small|medium|large} size - The width of the Video. Defaults to medium unless the full option is specified. The height will adapt to the aspect ratio of the video.
    */
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   /**

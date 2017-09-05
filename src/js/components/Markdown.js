@@ -14,7 +14,7 @@ import Image from './Image';
  * 
  * @description Render [markdown](#) content using Grommet components.
  *  
- * ```js
+ * @example
  * import Markdown from 'grommet/components/Markdown';
  * 
  * <Markdown components={{
@@ -32,7 +32,7 @@ import Image from './Image';
  * 
  * ![image](/img/carousel-1.png)
  * ' />
- * ```
+ * 
  */
 
 let GrommetMarkdown = (props) => {

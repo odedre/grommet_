@@ -24,7 +24,7 @@ const FORM_FIELD = CSSClassnames.FORM_FIELD;
 /**
  * @description An select-like field with optional search capability.
  * 
- * ```js
+ * @example
  * import Select from 'grommet/components/Select';
  * 
  * <Select placeHolder='None'
@@ -34,7 +34,7 @@ const FORM_FIELD = CSSClassnames.FORM_FIELD;
  *   options={['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight']}
  *   value={undefined}
  *   onChange={...} />
- * ```
+ * 
  */
 export default class Select extends Component {
 
@@ -515,11 +515,11 @@ Select.propTypes = {
   placeHolder: PropTypes.string,
   searchPlaceHolder: PropTypes.string,
   /**
-   * @property {PropTypes.string|PropTypes.object} options - Options can be either a string or an object. The label property of option objects can be a string or a React element. This allows rendering richer option representations.
+   * @property {PropTypes.string|PropTypes.object|PropTypes.number} options - Options can be either a string or an object. The label property of option objects can be a string or a React element. This allows rendering richer option representations.
    */
   options: PropTypes.arrayOf(valueType).isRequired,
   /**
-   * @property {PropTypes.string|PropTypes.object} value - What text to put in the input.
+   * @property {PropTypes.string|PropTypes.object|PropTypes.number} value - What text to put in the input.
    */
   value: PropTypes.oneOfType([valueType, PropTypes.arrayOf(valueType)])
 };

@@ -11,7 +11,7 @@ const CLASS_ROOT = CSSClassnames.TABS;
 /**
  * @description A tabular view component. The Tabs component contains one or more Tab components.
  * 
- * ```js
+ * @example
  * import Tabs from 'grommet/components/Tabs';
  * 
  * <Tabs>
@@ -32,7 +32,7 @@ const CLASS_ROOT = CSSClassnames.TABS;
  *       onChange={...} />
  *   </Tab>
  * </Tabs>
- * ```
+ * 
  */
 export default class Tabs extends Component {
 
@@ -124,7 +124,7 @@ Tabs.propTypes = {
    */
   activeIndex: PropTypes.number,
   /**
-   * @property {['start', 'center', 'end']} justify - How to align the tabs along the main axis. Defaults to center.
+   * @property {start|center|end} justify - How to align the tabs along the main axis. Defaults to center.
    */
   justify: PropTypes.oneOf(['start', 'center', 'end']),
   /**

@@ -22,7 +22,7 @@ const CLASS_ROOT = CSSClassnames.LOGIN_FORM;
  * 
  * @description The form used to log in.
  * 
- * ```js
+ * @example
  * import LoginForm from 'grommet/components/LoginForm';
  * 
  * <LoginForm onSubmit={...}
@@ -31,7 +31,7 @@ const CLASS_ROOT = CSSClassnames.LOGIN_FORM;
  *   secondaryText='Sample secondary text'
  *   forgotPassword={<Anchor href='#'
  *   label='Forgot password?' />} />
- * ```
+ * 
  */
 export default class LoginForm extends Component {
 
@@ -193,7 +193,7 @@ export default class LoginForm extends Component {
 
 LoginForm.propTypes = {
   /**
-   * @property {['start', 'center', 'end', 'stretch']} align - How to align the contents along the cross axis.
+   * @property {start|center|end|stretch} align - How to align the contents along the cross axis.
    */
   align: PropTypes.oneOf(['start', 'center', 'end', 'stretch']),
   /**

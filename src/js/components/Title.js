@@ -12,13 +12,13 @@ const CLASS_ROOT = CSSClassnames.TITLE;
 /**
  * @description Title component usually rendered inside a Header.
  * 
- * ```js
+ * @example
  * import Title from 'grommet/components/Title';
  * 
  * <Title>
  *   {contents}
  * </Title>
- * ```
+ * 
  */
 export default class Title extends Component {
 

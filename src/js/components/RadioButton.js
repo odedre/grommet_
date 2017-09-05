@@ -10,7 +10,7 @@ const CLASS_ROOT = CSSClassnames.RADIO_BUTTON;
 /**
  * @description A radio button in a web form. We have a separate component from the browser base so we can style it.
  * 
- * ```js
+ * @example
  * import RadioButton from 'grommet/components/RadioButton';
  * 
  * <FormField>
@@ -25,7 +25,7 @@ const CLASS_ROOT = CSSClassnames.RADIO_BUTTON;
  *     checked={false}
  *     onChange={...} />
  * </FormField>
- * ```
+ * 
  */
 export default class RadioButton extends Component {
   render () {

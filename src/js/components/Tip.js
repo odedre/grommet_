@@ -12,14 +12,14 @@ const CLASS_ROOT = CSSClassnames.TIP;
 /**
  * @description An attention getter used to highlight an aspect of the interface that might not be apparent at first glance. This should be used sparingly. Only one Tip should ever be shown on the screen at a time and only when it is referring to an action the user is likely to need or try imminitely.
  *
- * ```js
+ * @example
  * import Tip from 'grommet/components/Tip';
  * 
  * <Tip target='actions'
  *   onClose={...}>
  *   Available actions
  * </Tip>
- * ```
+ * 
  */
 export default class Tip extends Component {
 

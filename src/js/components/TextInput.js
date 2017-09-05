@@ -18,7 +18,7 @@ const FORM_FIELD = CSSClassnames.FORM_FIELD;
 /**
  * @description A text input field with optional suggestions.
  * 
- * ```js
+ * @example
  * import TextInput from 'grommet/components/TextInput';
  * 
  * <FormField>
@@ -29,7 +29,7 @@ const FORM_FIELD = CSSClassnames.FORM_FIELD;
  *     onSelect={...}
  *     suggestions={['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight']} />
  * </FormField>
- * ```
+ * 
  */
 export default class TextInput extends Component {
 
@@ -370,7 +370,7 @@ TextInput.propTypes = {
    */
   placeHolder: PropTypes.string,
   /**
-   * @property {[PropTypes.object,PropTypes.string]} suggestions - Suggestions to show. It is recommended to avoid showing too many suggestions and instead rely on the user to type more.
+   * @property {PropTypes.object|PropTypes.string} suggestions - Suggestions to show. It is recommended to avoid showing too many suggestions and instead rely on the user to type more.
    */
   suggestions: PropTypes.arrayOf(
     PropTypes.oneOfType([

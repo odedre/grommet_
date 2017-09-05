@@ -11,7 +11,7 @@ const CLASS_ROOT = CSSClassnames.SPLIT;
 /**
  * @description A full height container with two children laid out horizontally. Typical uses involve placing a [Sidebar](#) on the left for primary navigation and then main content on the right. The right side might contain a separate Split component to provide further content depth. Typically, you will want the top Split to be a direct child of the [App](#) component as this will provide the best responsive behavior across devices.
  * 
- * ```js
+ * @example
  * import Split from 'grommet/components/Split';
  * 
  * <Split separator={true}>
@@ -28,7 +28,7 @@ const CLASS_ROOT = CSSClassnames.SPLIT;
  *     Right Side
  *   </Box>
  * </Split>
- * ```
+ * 
  */
 export default class Split extends Component {
 
@@ -177,7 +177,7 @@ Split.propTypes = {
    */
   fixed: PropTypes.bool,
   /**
-   * @property {['left', 'right', 'both']} flex - Which side to give flexible space to. The default value is 'both'.
+   * @property {left|right|both} flex - Which side to give flexible space to. The default value is 'both'.
    */
   flex: PropTypes.oneOf(['left', 'right', 'both']),
   /**
@@ -185,7 +185,7 @@ Split.propTypes = {
    */
   onResponsive: PropTypes.func,
   /**
-   * @property {['left', 'right']} priority - Which side to prioritize when space is limited. The default value is 'right'.
+   * @property {left|right} priority - Which side to prioritize when space is limited. The default value is 'right'.
    */
   priority: PropTypes.oneOf(['left', 'right']),
   /**
@@ -193,7 +193,7 @@ Split.propTypes = {
    */
   separator: PropTypes.bool,
   /**
-   * @property {['priority', 'both']} showOnResponsive - Whether the Split should show both sides for mobile, or collapse down to just the priority side. The default value is 'priority'
+   * @property {priority|both} showOnResponsive - Whether the Split should show both sides for mobile, or collapse down to just the priority side. The default value is 'priority'
    */
   showOnResponsive: PropTypes.oneOf(['priority', 'both'])
 };

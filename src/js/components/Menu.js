@@ -29,7 +29,8 @@ function isFunction (obj) {
  * @description Presents a list of choices responsively. A Menu can either present the list of choices inline or within a drop down behind a control that opens it.
  * 
  * Properties for [Box](#) are also available.
- * ```js
+ * 
+ * @example
  * import Menu from 'grommet/components/Menu';
  * 
  * <Menu responsive={true}
@@ -49,7 +50,7 @@ function isFunction (obj) {
  *   </Anchor>
  * </Menu>
  * 
- * ```
+ * 
  */
 class MenuDrop extends Component {
 
@@ -542,7 +543,7 @@ Menu.propTypes = {
   icon: PropTypes.node,
   id: PropTypes.string,
   /**
-   * @property {[PropTypes.bool,expand]} inline - Indicates whether the menu should be shown inline or a control shown to open it in a drop down. If false, the specified label or icon will be shown, if neither are specified, a default icon will be shown.
+   * @property {PropTypes.bool|expand} inline - Indicates whether the menu should be shown inline or a control shown to open it in a drop down. If false, the specified label or icon will be shown, if neither are specified, a default icon will be shown.
    */
   inline: PropTypes.oneOfType([PropTypes.bool, PropTypes.oneOf(['expand'])]),
   /**
@@ -554,7 +555,7 @@ Menu.propTypes = {
    */
   label: PropTypes.string,
   /**
-   * @property {['small', 'medium', 'large']} size - The size of the Menu. Defaults to medium.
+   * @property {small|medium|large} size - The size of the Menu. Defaults to medium.
    */
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   ...Box.propTypes

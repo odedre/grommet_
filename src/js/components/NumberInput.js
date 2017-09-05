@@ -13,12 +13,13 @@ const INPUT = CSSClassnames.INPUT;
 
 /**
  * @description A number input in a web form. We have a separate component from the browser base so we can style it.
- * ```js
+ * 
+ * @example
  * import NumberInput from 'grommet/components/NumberInput';
  * 
  * <NumberInput value={10}
  *  onChange={...} />
- * ```
+ * 
  */
 export default class NumberInput extends Component {
 
@@ -147,7 +148,7 @@ NumberInput.propTypes = {
    */
   step: PropTypes.number,
   /**
-   * @property {[PropTypes.number|PropTypes.string]} value -The value to put in the input. 
+   * @property {PropTypes.number|PropTypes.string} value -The value to put in the input. 
    */
   value: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
 };

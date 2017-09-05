@@ -26,14 +26,14 @@ const BACKGROUND_COLOR_INDEX = CSSClassnames.BACKGROUND_COLOR_INDEX;
  * 
  * Properties for [Box](#) are also available for Notification.
  * 
- * ```js
+ * @example
  * import Notification from 'grommet/components/Notification';
  * 
  * <Notification state='Sample state'
  *   message='Sample message'
  *   timestamp={{}}
  *   percentComplete={30} />
- * ```
+ * 
  */
 
 export default class Notification extends Component {
@@ -244,7 +244,7 @@ Notification.propTypes = {
    */
   percentComplete: PropTypes.number,
   /**
-   * @property {['small', 'medium', 'large']} size - Size of the notification box.
+   * @property {small|medium|large} size - Size of the notification box.
    */
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   /**

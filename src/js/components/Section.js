@@ -10,13 +10,13 @@ const CLASS_ROOT = CSSClassnames.SECTION;
 /**
  * @description A standard [HTML5 section](#). It might contain a [Heading](#), one or more [Paragraphs](#), [Images](#), and [Videos](#).
  * 
- * ```js
+ * @example
  * import Section from 'grommet/components/Section';
  * 
  * <Section>
  *   {contents}
  * </Section>
- * ```
+ * 
  * 
  * Properties for [Box](#) are available.
  */

@@ -13,7 +13,7 @@ const COLOR_INDEX = CSSClassnames.COLOR_INDEX;
 /**
  * @description Shows a graph of nodes and links between them.
  * 
- * ```js
+ * @example
  * import Map from 'grommet/components/Map';
  * 
  * <Map vertical={true}
@@ -81,7 +81,7 @@ const COLOR_INDEX = CSSClassnames.COLOR_INDEX;
  *     {"parentId": "item-2-1", "childId": "item-3-2"}
  *   ]
  * }} />
- * ```
+ * 
  */
 
 export default class ResourceMap extends Component {

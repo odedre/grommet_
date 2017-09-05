@@ -21,7 +21,7 @@ const BACKGROUND_COLOR_INDEX = CSSClassnames.BACKGROUND_COLOR_INDEX;
 /**
  * @description A responsive search control.
  * 
- * ```js
+ * @example
  * import Search from 'grommet/components/Search';
  * 
  * <Search placeHolder='Search'
@@ -30,7 +30,7 @@ const BACKGROUND_COLOR_INDEX = CSSClassnames.BACKGROUND_COLOR_INDEX;
  *   value=''
  *   onSelect={...}
  *   onDOMChange={...} />
- * ```
+ * 
  */
 export default class Search extends Component {
 
@@ -517,7 +517,7 @@ Search.propTypes = {
    */
   fill: PropTypes.bool,
   /**
-   * @property {['start', 'end']} iconAlign - Whether the search icon should align with the start or end of the input field. Defaults to end.
+   * @property {start|end} iconAlign - Whether the search icon should align with the start or end of the input field. Defaults to end.
    */
   iconAlign: PropTypes.oneOf(['start', 'end']),
   id: PropTypes.string,
@@ -545,7 +545,7 @@ Search.propTypes = {
    */
   responsive: PropTypes.bool,
   /**
-   * @property {['small', 'medium', 'large']} size - The size of the inline search input. Defaults to medium.
+   * @property {small|medium|large} size - The size of the inline search input. Defaults to medium.
    */
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   /**

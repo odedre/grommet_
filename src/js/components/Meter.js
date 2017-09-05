@@ -34,7 +34,7 @@ function getMaxDecimalDigits (series) {
 /**
  * @description Shows a bar, arc, or circular meter graphic.
  * 
- * ```js
+ * @example
  * <Box direction='row'
  *   pad={{"between": "small"}}>
  *   <Meter vertical={true}
@@ -56,7 +56,7 @@ function getMaxDecimalDigits (series) {
  *     </Label>
  *   </Box>
  * </Box>
- * ```
+ * 
  */
 export default class Meter extends Component {
 
@@ -371,7 +371,7 @@ Meter.propTypes = {
     value: PropTypes.number.isRequired
   })),
   /**
-   * @property {['xsmall', 'small', 'medium', 'large', 'xlarge']} size - The size of the Meter. Defaults to medium. Currently, the spiral type Meter does not respond to this property.
+   * @property {xsmall|small|medium|large|xlarge} size - The size of the Meter. Defaults to medium. Currently, the spiral type Meter does not respond to this property.
    */
   size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
   /**
@@ -391,7 +391,7 @@ Meter.propTypes = {
     colorIndex: PropTypes.string
   })),
   /**
-   * @property {['bar', 'arc', 'circle', 'spiral']} type - Whether to draw a bar, an arc, a circle, or a spiral.
+   * @property {bar|arc|circle|spiral} type - Whether to draw a bar, an arc, a circle, or a spiral.
    */
   type: PropTypes.oneOf(['bar', 'arc', 'circle', 'spiral']),
   /**

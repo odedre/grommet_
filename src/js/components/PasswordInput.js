@@ -14,12 +14,12 @@ const INPUT = CSSClassnames.INPUT;
 /**
  * @description A text input in a web form. We have a separate component from the browser base so that we can toggle show/hide password.
  * 
- * ```js
+ * @example
  * import PasswordInput from 'grommet/components/PasswordInput';
  * 
  * <PasswordInput value='grommet 2.0 is coming'
  *   onChange={...} />
- * ```
+ * 
  */
 export default class PasswordInput extends Component {
   constructor() {
