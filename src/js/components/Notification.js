@@ -22,8 +22,7 @@ const CLASS_ROOT = CSSClassnames.NOTIFICATION;
 const BACKGROUND_COLOR_INDEX = CSSClassnames.BACKGROUND_COLOR_INDEX;
 
 /**
- * #Notification
- * A box to display notification messages.
+ * @description A box to display notification messages.
  * 
  * Properties for [Box](#) are also available for Notification.
  * 

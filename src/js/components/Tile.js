@@ -11,8 +11,7 @@ const CLASS_ROOT = CSSClassnames.TILE;
 const NAMESPACE = CSSClassnames.NAMESPACE;
 
 /**
- * #Tile
- * Properties for [Box](#) are also available for Tile.
+ * @description Properties for [Box](#) are also available for Tile.
  */
 
 export default class Tile extends Component {

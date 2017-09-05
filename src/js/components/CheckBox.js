@@ -9,17 +9,16 @@ const CLASS_ROOT = CSSClassnames.CHECK_BOX;
 
 /**
  *
- * #CheckBox
- * A check box in a web form. We have a separate component from the browser base so we can style it.
+ * @description A check box in a web form. We have a separate component from the browser base so we can style it.
  * 
- * ```js
+ * @example
  *  import CheckBox from 'grommet/components/CheckBox';
  * 
  * <CheckBox label='Sample label'
  *   toggle={false}
  *   disabled={false}
  *   reverse={false} />
- * ```
+ * 
  */
 
 export default class CheckBox extends Component {

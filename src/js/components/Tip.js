@@ -10,8 +10,7 @@ import Drop from '../utils/Drop';
 const CLASS_ROOT = CSSClassnames.TIP;
 
 /**
- * #Tip
- * An attention getter used to highlight an aspect of the interface that might not be apparent at first glance. This should be used sparingly. Only one Tip should ever be shown on the screen at a time and only when it is referring to an action the user is likely to need or try imminitely.
+ * @description An attention getter used to highlight an aspect of the interface that might not be apparent at first glance. This should be used sparingly. Only one Tip should ever be shown on the screen at a time and only when it is referring to an action the user is likely to need or try imminitely.
  *
  * ```js
  * import Tip from 'grommet/components/Tip';

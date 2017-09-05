@@ -8,8 +8,7 @@ import CSSClassnames from '../utils/CSSClassnames';
 const CLASS_ROOT = CSSClassnames.SECTION;
 
 /**
- * #Section
- * A standard [HTML5 section](#). It might contain a [Heading](#), one or more [Paragraphs](#), [Images](#), and [Videos](#).
+ * @description A standard [HTML5 section](#). It might contain a [Heading](#), one or more [Paragraphs](#), [Images](#), and [Videos](#).
  * 
  * ```js
  * import Section from 'grommet/components/Section';

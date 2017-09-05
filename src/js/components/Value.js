@@ -10,8 +10,7 @@ const CLASS_ROOT = CSSClassnames.VALUE;
 const COLOR_INDEX = CSSClassnames.COLOR_INDEX;
 
 /**
- * #Value
- * Value component, focusing on a single number.
+ * @description Value component, focusing on a single number.
  * 
  * ```js
  * import Value from 'grommet/components/Value';

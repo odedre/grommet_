@@ -22,8 +22,7 @@ const INPUT = CSSClassnames.INPUT;
 const FORM_FIELD = CSSClassnames.FORM_FIELD;
 
 /**
- * #Select
- * An select-like field with optional search capability.
+ * @description An select-like field with optional search capability.
  * 
  * ```js
  * import Select from 'grommet/components/Select';

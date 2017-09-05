@@ -17,10 +17,9 @@ const SELECTED_CLASS = `${CLASS_ROOT}-item--selected`;
 const ACTIVE_CLASS = `${CLASS_ROOT}-item--active`;
 
 /**
- * #List
- * A list of items. The preferred method of populating items in the List is to use ListItem children.
+ * @description A list of items. The preferred method of populating items in the List is to use ListItem children.
  * 
- * ```js
+ * @example
  * import List from 'grommet/components/List';
  * import ListItem from 'grommet/components/ListItem';
  * 
@@ -51,7 +50,7 @@ const ACTIVE_CLASS = `${CLASS_ROOT}-item--active`;
  *     </span>
  *   </ListItem>
  * </List>
- * ```
+ * 
  */
 export default class List extends Component {
 
@@ -384,7 +383,7 @@ List.propTypes = {
    */
   onSelect: PropTypes.func,
   /**
-   * @property {[true|false|multiple]} selectable - Whether rows are selectable. multiple indicates that multiple rows may be selected
+   * @property {true|false|multiple} selectable - Whether rows are selectable. multiple indicates that multiple rows may be selected
    */
   selectable: PropTypes.oneOfType([
     PropTypes.bool,

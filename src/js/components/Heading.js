@@ -8,10 +8,9 @@ import CSSClassnames from '../utils/CSSClassnames';
 const CLASS_ROOT = CSSClassnames.HEADING;
 
 /**
- * #Heading
- * An HTML heading, one of h1, h2, h3, h4, h5, h6. See [Typography](#) for examples of all heading tags.
+ * @description An HTML heading, one of h1, h2, h3, h4, h5, h6. See [Typography](#) for examples of all heading tags.
  * 
- * ```js
+ * @example
  * import Heading from 'grommet/components/Heading';
  * 
  * <Heading strong={false}
@@ -19,7 +18,7 @@ const CLASS_ROOT = CSSClassnames.HEADING;
  *   truncate={true}>
  *   Sample Heading
  * </Heading>
- * ```
+ * 
  */
 export default class Heading extends Component {
   render() {
@@ -49,11 +48,11 @@ export default class Heading extends Component {
 
 Heading.propTypes = {
   /**
-   * @property {['start', 'center', 'end']} align - The horizontal alignment of the Heading. Defaults to start.
+   * @property {start|center|end} align - The horizontal alignment of the Heading. Defaults to start.
    */
   align: PropTypes.oneOf(['start', 'center', 'end']),
   /**
-   * @property {['none', 'small', 'medium', 'large']} margin - The vertical margin below the Heading. Defaults to medium.
+   * @property {none|small|medium|large} margin - The vertical margin below the Heading. Defaults to medium.
    */
   margin: PropTypes.oneOf(['none', 'small', 'medium', 'large']),
   size: PropTypes.oneOf(['small', 'medium', 'large']),

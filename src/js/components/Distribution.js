@@ -23,15 +23,15 @@ const GUTTER_SIZE = 4;
 
 /**
  * 
- * #Distribution
- * Shows a graphic of relatively sized items. If colorIndex properties are not specified per series item, they will be automatically asigned. One way to use a Distribution is to compare items across two attributes. One attribute determining the area and another determining the color. The guidance for coloring items is to use colorIndex 'unset' for less important items, neutral or graph colors for normal items and accent colors for items to call attention to. Status colorIndex values can be used as well.
- * ```js
+ * @description Shows a graphic of relatively sized items. If colorIndex properties are not specified per series item, they will be automatically asigned. One way to use a Distribution is to compare items across two attributes. One attribute determining the area and another determining the color. The guidance for coloring items is to use colorIndex 'unset' for less important items, neutral or graph colors for normal items and accent colors for items to call attention to. Status colorIndex values can be used as well.
+ * 
+ * @example
  *  import Distribution from 'grommet/components/Distribution';
  * 
  * <Distribution series={[{"label": "First", "value": 40, "onClick": "..."}, {"label": "Second", "value": 30, "onClick": "..."}, {"label": "Third", "value": 20, "onClick": "..."}, {"label": "Fourth", "value": 10, "onClick": "..."}]}
  *   full={true}
  *   units='%' />
- * ```
+ * 
  */
 export default class Distribution extends Component {
 
@@ -565,7 +565,7 @@ Distribution.propTypes = {
     })
   })),
   /**
-   * @property {['small', 'medium', 'large', 'full']} size - The height of the Distribution. Defaults to medium.
+   * @property {small|medium|large|full} size - The height of the Distribution. Defaults to medium.
    */
   size: PropTypes.oneOf(['small', 'medium', 'large', 'full']),
   /**

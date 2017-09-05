@@ -16,8 +16,7 @@ const INPUT = CSSClassnames.INPUT;
 const FORM_FIELD = CSSClassnames.FORM_FIELD;
 
 /**
- * #TextInput
- * A text input field with optional suggestions.
+ * @description A text input field with optional suggestions.
  * 
  * ```js
  * import TextInput from 'grommet/components/TextInput';

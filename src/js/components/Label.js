@@ -9,10 +9,9 @@ import { announce } from '../utils/Announcer';
 const CLASS_ROOT = CSSClassnames.LABEL;
 
 /**
- * #Label
- * A simple text label. This could be used to annotate a [Value](#) to indicate what the value refers to. Or, it can annotate a [Card](#) to indicate a category.
+ * @description A simple text label. This could be used to annotate a [Value](#) to indicate what the value refers to. Or, it can annotate a [Card](#) to indicate a category.
  * 
- * 
+ * @example
  * import Label from 'grommet/components/Label';
  * 
  * <Label>
@@ -57,7 +56,7 @@ export default class Label extends Component {
 
 Label.propTypes = {
   /**
-   * @property {['start', 'center', 'end']} align - Text alignment. Defaults to inherit.
+   * @property {start|center|end} align - Text alignment. Defaults to inherit.
    */
   align: PropTypes.oneOf(['start', 'center', 'end']),
   /**
@@ -69,11 +68,11 @@ Label.propTypes = {
    */
   labelFor: PropTypes.string,
   /**
-   * @property {['none', 'small', 'medium', 'large']} margin - The margin around the Label. Defaults to none when the size prop is set to small, otherwise medium.
+   * @property {none|small|medium|large} margin - The margin around the Label. Defaults to none when the size prop is set to small, otherwise medium.
    */
   margin: PropTypes.oneOf(['none', 'small', 'medium', 'large']),
   /**
-   * @property {['small', 'medium', 'large']} size - The size of the Label. Defaults to medium.
+   * @property {small|medium|large} size - The size of the Label. Defaults to medium.
    */
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   /**

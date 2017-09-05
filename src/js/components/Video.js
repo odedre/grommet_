@@ -14,8 +14,7 @@ const CLASS_ROOT = CSSClassnames.VIDEO;
 const BACKGROUND_COLOR_INDEX = CSSClassnames.BACKGROUND_COLOR_INDEX;
 
 /**
- * #Video
- * Video built on the HTML5 video element.
+ * @description Video built on the HTML5 video element.
  * 
  * Callers must include child <source> elements according to the HTML5 <video> specification.
  * 

@@ -11,11 +11,10 @@ import Box from './Box';
 const CLASS_ROOT = CSSClassnames.HEADER;
 
 /**
- * #Header
- * Combines Title and Menu elements responsively.
+ * @description Combines Title and Menu elements responsively.
  * Options for [Box](#) are also available.
  * 
- * ```js
+ * @example
  * import Header from 'grommet/components/Header';
  * 
  * <Header fixed={true}
@@ -47,7 +46,7 @@ const CLASS_ROOT = CSSClassnames.HEADER;
  *     </Menu>
  *   </Box>
  * </Header>
- * ```
+ * 
  */
 export default class Header extends Component {
 
@@ -177,7 +176,7 @@ Header.propTypes = {
    */
   float: PropTypes.bool,
   /**
-   * @property {['small', 'medium', 'large']} size - The size of the Header. Defaults to medium.
+   * @property {small|medium|large} size - The size of the Header. Defaults to medium.
    */
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   /**

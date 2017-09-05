@@ -32,10 +32,9 @@ const TIME_REGEXP = new RegExp('[Hhmsa]');
 
 /**
  * 
- * #DateTime
- * An input field for a date and/or time.
+ * @description An input field for a date and/or time.
  * 
- * ```js
+ * @example
  * import DateTime from 'grommet/components/DateTime';
  * 
  * <Form>
@@ -45,7 +44,7 @@ const TIME_REGEXP = new RegExp('[Hhmsa]');
  *       onChange={...} />
  *   </FormField>
  * </Form>
- * ```
+ * 
  */
 export default class DateTime extends Component {
 

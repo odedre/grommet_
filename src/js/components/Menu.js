@@ -26,8 +26,7 @@ function isFunction (obj) {
 // so we can transfer the router context.
 
 /**
- * #Menu
- * Presents a list of choices responsively. A Menu can either present the list of choices inline or within a drop down behind a control that opens it.
+ * @description Presents a list of choices responsively. A Menu can either present the list of choices inline or within a drop down behind a control that opens it.
  * 
  * Properties for [Box](#) are also available.
  * ```js

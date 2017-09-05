@@ -12,8 +12,7 @@ import Image from './Image';
 
 /**
  * 
- * #Markdown
- * Render [markdown](#) content using Grommet components.
+ * @description Render [markdown](#) content using Grommet components.
  *  
  * ```js
  * import Markdown from 'grommet/components/Markdown';

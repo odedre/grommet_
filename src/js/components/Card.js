@@ -54,13 +54,12 @@ const PARAGRAPH_MARGINS = {
 };
 
 /**
- * #Card
- * An annotated summary of something. This could be used on a home/marketing page to provide snippets of content that the user can click through for more detail. Or, as search result items. All properties are optional and can be mixed and matched as needed.
+ * @description An annotated summary of something. This could be used on a home/marketing page to provide snippets of content that the user can click through for more detail. Or, as search result items. All properties are optional and can be mixed and matched as needed.
  * Card could be used in combination with Columns or Tiles.
  * 
  * Properties for [Box](#) are also available for Card.
  * 
- * ```js
+ * @example
  * import Card from 'grommet/components/Card';
  * 
  * <Card thumbnail='/img/carousel-1.png'
@@ -70,7 +69,7 @@ const PARAGRAPH_MARGINS = {
  *   video={{"source": "/video/test.mp4", "type": "mp4"}}
  *   link={<Anchor href=''
  *   label='Sample anchor' />} />
- * ```
+ * 
  */
 export default class Card extends Component {
 
@@ -277,7 +276,7 @@ export default class Card extends Component {
 
 Card.propTypes = {
   /**
-   * @property {none|small|medium|large|{...}} contentPad - Padding for the Box containing the text content. See pad in [Box](#) for additional details.
+   * @property {none|small|medium|large} contentPad - Padding for the Box containing the text content. See pad in [Box](#) for additional details.
    */
   contentPad: Box.propTypes.pad,
   /**
@@ -310,7 +309,7 @@ Card.propTypes = {
    */
   link: PropTypes.element,
   /**
-   * @property {['xsmall', 'small', 'medium', 'large', 'xlarge']} textSize - Size of text elements within the Card. Defaults to medium. If you pass custom elements for description, label, or heading, they will not be resized.
+   * @property {xsmall|small|medium|large|xlarge} textSize - Size of text elements within the Card. Defaults to medium. If you pass custom elements for description, label, or heading, they will not be resized.
    */
   textSize: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
   /**

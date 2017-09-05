@@ -13,10 +13,9 @@ import CSSClassnames from '../utils/CSSClassnames';
 const CLASS_ROOT = CSSClassnames.ANCHOR;
 
 /**
- * #Anchor
- * A text link. We have a separate component from the browser base so we can style it. You can either set the icon and/or label properties or just use children.
+ * @description A text link. We have a separate component from the browser base so we can style it. You can either set the icon and/or label properties or just use children.
  * 
- * ```js
+ * @example
  * import Anchor from 'grommet/components/Anchor';
  * 
  * <Anchor icon={<Edit />}
@@ -32,7 +31,7 @@ const CLASS_ROOT = CSSClassnames.ANCHOR;
  *   </Heading>
  *   Text label
  * </Anchor>
- * ```
+ * 
  */
 
 export default class Anchor extends Component {
@@ -238,36 +237,78 @@ schema(Anchor, {
   usage: `import Anchor from 'grommet/components/Anchor';
   <Anchor href={location} label="Label" />`,
   props: {
+    /**
+   * @property {PropTypes.string} a11yTitle - Accessibility title.
+   */
     a11yTitle: [PropTypes.string, 'Accessibility title.'],
+    /**
+   * @property {['start', 'center', 'end']} align - Text alignment.
+   */
     align: [PropTypes.oneOf(['start', 'center', 'end']), 'Text alignment.'],
+    /**
+   * @property {PropTypes.bool} animateIcon - Whether to animate the icon on hover. The default is true.
+   */
     animateIcon: [PropTypes.bool, 'Whether to animate the icon on hover.', {
       defaultProp: true
     }],
+    /**
+   * @property {PropTypes.bool} disabled - Whether to disable the anchor. The default is false.
+   */
     disabled: [PropTypes.bool, 'Whether to disable the anchor.'],
+    /**
+   * @property {PropTypes.string} href - Hyperlink reference to place in the anchor. If `path` prop is provided, `href` prop will be ignored.
+   */
     href: [PropTypes.string, 'Hyperlink reference to place in the anchor. If'
       + ' `path` prop is provided, `href` prop will be ignored.'],
+    /**
+   * @property {PropTypes.element} icon - Icon element to place in the anchor. See Icon.
+   */
     icon: [PropTypes.element, 'Icon element to place in the anchor.'],
+    /**
+   * @property {PropTypes.string} id - Anchor identifier.
+   */
     id: [PropTypes.string, 'Anchor identifier.'],
+    /**
+   * @property {PropTypes.node} label - Label text to place in the anchor.
+   */
     label: [PropTypes.node, 'Label text to place in the anchor.'],
+    /**
+   * @property {push|replace} method - Valid only when used with path. Indicates whether the browser history should be appended to or replaced. The default is push.
+   */
     method: [PropTypes.oneOf(['push', 'replace']),
       'Valid only when used with path. Indicates whether the browser history' +
       ' should be appended to or replaced.', {
         defaultProp: 'push'
       }
     ],
+    /**
+   * @property {PropTypes.func} onClick - Click handler.
+   */
     onClick: [PropTypes.func, 'Click handler.'],
+    /**
+   * @property {PropTypes.object|PropTypes.string} path - React-router path to navigate to when clicked. Use path={{ path: '/', index: true }} if you want the Anchor to be active only when the index route is current.
+   */
     path: [
       PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
       'React-router path to navigate to when clicked.' +
       ' Use path={{ path: \'/\', index: true }} if you want the Anchor to be' +
       ' active only when the index route is current.'
     ],
+    /**
+   * @property {PropTypes.bool} primary - Whether this is a primary anchor. The default is false.
+   */
     primary: [PropTypes.bool, 'Whether this is a primary anchor.'],
+    /**
+   * @property {PropTypes.bool} reverse - Whether an icon and label should be reversed so that the icon is at the end of the anchor. The default is false.
+   */
     reverse: [
       PropTypes.bool,
       'Whether an icon and label should be reversed so that the icon is at ' +
       'the end of the anchor.'
     ],
+    /**
+   * @property {PropTypes.string} tag - The DOM tag to use for the element. The default is <a>. This should be used in conjunction with components like Link from React Router. In this case, Link controls the navigation while Anchor controls the styling. The default is a.
+   */
     tag: [PropTypes.string,
       'The DOM tag to use for the element. The default is <a>. This should be' +
       ' used in conjunction with components like Link from React Router. In' +
@@ -276,6 +317,9 @@ schema(Anchor, {
         defaultProp: 'a'
       }
     ],
+    /**
+   * @property {PropTypes.string} target - Target of the link.
+   */
     target: [PropTypes.string, 'Target of the link.']
   }
 });

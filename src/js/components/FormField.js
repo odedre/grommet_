@@ -8,10 +8,9 @@ import CSSClassnames from '../utils/CSSClassnames';
 const CLASS_ROOT = CSSClassnames.FORM_FIELD;
 
 /**
- * #FormField
- * A field in a web form.
+ * @description A field in a web form.
  * 
- * ```js
+ * @example
  * import FormField from 'grommet/components/FormField';
  * 
  * <Form>
@@ -21,7 +20,7 @@ const CLASS_ROOT = CSSClassnames.FORM_FIELD;
  *     <TextInput />
  *   </FormField>
  * </Form>
- * ```
+ * 
  */
 export default class FormField extends Component {
 
@@ -141,7 +140,7 @@ FormField.propTypes = {
    */
   label: PropTypes.node,
   /**
-   * @property {['medium', 'large']} size - The size of the input text font. Defaults to medium. This property will most likely be removed in Grommet 2.0.
+   * @property {medium|large} size - The size of the input text font. Defaults to medium. This property will most likely be removed in Grommet 2.0.
    */
   size: PropTypes.oneOf(['medium', 'large']),
   /**

@@ -32,8 +32,7 @@ function getMaxDecimalDigits (series) {
 }
 
 /**
- * #Meter
- * Shows a bar, arc, or circular meter graphic.
+ * @description Shows a bar, arc, or circular meter graphic.
  * 
  * ```js
  * <Box direction='row'

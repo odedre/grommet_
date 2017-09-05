@@ -28,16 +28,15 @@ if (! localesSupported()) {
 }
 
 /**
- * #App
- * This is the primary Grommet container outer. Typically it will either contain a [Split](#) or an [Article](#).
+ * @description This is the primary Grommet container outer. Typically it will either contain a [Split](#) or an [Article](#).
  * 
- * ```js
+ * @example
  *  import App from 'grommet/components/App';
  * 
  * <App>
  *   {contents}
  * </App>
- * ```
+ * 
  */
 export default class App extends Component {
   constructor(props, context) {

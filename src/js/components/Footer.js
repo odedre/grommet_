@@ -13,10 +13,9 @@ const CLASS_ROOT = CSSClassnames.FOOTER;
 
 /**
  * 
- * #Footer
- * Put things at the bottom.
+ * @description Put things at the bottom.
  * 
- * ```js
+ * @example
  * import Footer from 'grommet/components/Footer';
  * 
  * <Footer justify='between'>
@@ -45,7 +44,7 @@ const CLASS_ROOT = CSSClassnames.FOOTER;
  *     </Menu>
  *   </Box>
  * </Footer>
- * ```
+ * 
  */
 export default class Footer extends Component {
 

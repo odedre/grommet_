@@ -18,10 +18,9 @@ import Props from '../utils/Props';
 const CLASS_ROOT = CSSClassnames.CAROUSEL;
 
 /**
- * #Carousel
- * Image carousel.
+ * @description Image carousel.
  * 
- * ```js
+ * @example
  * import Carousel from 'grommet/components/Carousel';
  * 
  * <Carousel>
@@ -35,7 +34,7 @@ const CLASS_ROOT = CSSClassnames.CAROUSEL;
  *     </Box>
  *   </Box>
  * </Carousel>
- * ```
+ * 
  */
 export default class Carousel extends Component {
 

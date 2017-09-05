@@ -25,8 +25,7 @@ const SELECTED_CLASS = `${TILE}--selected`;
 const ACTIVE_CLASS = `${TILE}--active`;
 
 /**
- * #Tiles
- * A grid of items. The preferred method of populating Tiles is to use Tile children.
+ * @description A grid of items. The preferred method of populating Tiles is to use Tile children.
  * 
  * Properties for [Box](#) are also available for Tiles.
  * ```js

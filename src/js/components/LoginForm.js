@@ -20,8 +20,7 @@ const CLASS_ROOT = CSSClassnames.LOGIN_FORM;
 
 /**
  * 
- * #LoginForm
- * The form used to log in.
+ * @description The form used to log in.
  * 
  * ```js
  * import LoginForm from 'grommet/components/LoginForm';

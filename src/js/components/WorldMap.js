@@ -154,8 +154,7 @@ const coordToLatLon = (coord, origin, extent) => {
 };
 
 /** 
- * #WorldMap
- * A world map of continents.
+ * @description A world map of continents.
  * 
  * Note: It is a good idea to include a Legend along with this visualization. You can use the same seriesproperty for both WorldMap and Legend.
  * 

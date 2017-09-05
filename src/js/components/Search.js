@@ -19,8 +19,7 @@ const INPUT = CSSClassnames.INPUT;
 const BACKGROUND_COLOR_INDEX = CSSClassnames.BACKGROUND_COLOR_INDEX;
 
 /**
- * #Search
- * A responsive search control.
+ * @description A responsive search control.
  * 
  * ```js
  * import Search from 'grommet/components/Search';

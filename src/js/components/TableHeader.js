@@ -8,8 +8,7 @@ import AscIcon from './icons/base/LinkDown';
 import DescIcon from './icons/base/LinkUp';
 
 /**
- * #TableHeader
- * A table header that can be used as a sort control.
+ * @description A table header that can be used as a sort control.
  * 
  * ```js
  * import TableHeader from 'grommet/components/TableHeader';

@@ -9,10 +9,9 @@ const CLASS_ROOT = CSSClassnames.FORM;
 
 /**
  * 
- * #Form
- * A web form.
+ * @description A web form.
  * 
- * ```js
+ * @example
  * import Form from 'grommet/components/Form';
  * // Please see the documentation for each
  * // field's component for further example
@@ -44,7 +43,7 @@ const CLASS_ROOT = CSSClassnames.FORM;
  *       onClick={...} />
  *   </Footer>
  * </Form>
- * ```
+ * 
  */
 export default class Form extends Component {
   render () {
@@ -83,7 +82,7 @@ Form.propTypes = {
    */
   onSubmit: PropTypes.func,
   /**
-   * @property {[[none, small, medium, large],PropTypes.object]} pad - The amount of padding to put around the contents. An object can be specified to distinguish horizontal and vertical padding: {horizontal: none|small|medium|large, vertical: none|small|medium|large}. Defaults to none.
+   * @property {none|small|medium|large|PropTypes.object} pad - The amount of padding to put around the contents. An object can be specified to distinguish horizontal and vertical padding: {horizontal: none|small|medium|large, vertical: none|small|medium|large}. Defaults to none.
    */
   pad: PropTypes.oneOfType([
     PropTypes.oneOf(['none', 'small', 'medium', 'large']),

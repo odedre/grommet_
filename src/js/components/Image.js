@@ -9,15 +9,15 @@ import CSSClassnames from '../utils/CSSClassnames';
 const CLASS_ROOT = CSSClassnames.IMAGE;
 
 /**
- * #Image
+ * @description An Image
  * 
- * ```js
+ * @example
  * import Image from 'grommet/components/Image';
  * 
  * <Image src='/img/carousel-1.png'
  *   alt='Sample alt'
  *   caption='Sample caption' />
- * ```
+ * 
  */
 export default class Image extends Component {
   render () {
@@ -82,22 +82,22 @@ Image.propTypes = {
    */
   alt: PropTypes.string,
   /**
-   * @property {[PropTypes.bool|PropTypes.string]} caption - Whether to add image caption or not. If set to true, caption text will be the image alt value. Also, caption can receive the text to be used instead of the default one.
+   * @property {PropTypes.bool|PropTypes.string} caption - Whether to add image caption or not. If set to true, caption text will be the image alt value. Also, caption can receive the text to be used instead of the default one.
    */
   caption: PropTypes.oneOfType([
     PropTypes.bool, PropTypes.string
   ]),
   /**
-   * @property {['contain', 'cover']} fit - How the image should be scaled to fit in the container. Setting this property also sets full='true'.
+   * @property {contain|cover} fit - How the image should be scaled to fit in the container. Setting this property also sets full='true'.
    */
   fit: PropTypes.oneOf(['contain', 'cover']),
   /**
-   * @property {[true, 'horizontal', 'vertical', false]} full - Whether the image should expand to fill the available width and/or height.
+   * @property {true|horizontal|vertical|false]} full - Whether the image should expand to fill the available width and/or height.
    */
   full: PropTypes.oneOf([true, 'horizontal', 'vertical', false]),
   mask: PropTypes.bool,
   /**
-   * @property {['small', 'medium', 'large', 'thumb']} size - The size of the Image. Defaults to medium.
+   * @property {small|medium|large|thumb} size - The size of the Image. Defaults to medium.
    */
   size: PropTypes.oneOf(['small', 'medium', 'large', 'thumb']),
   /**

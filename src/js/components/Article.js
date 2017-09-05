@@ -22,10 +22,9 @@ const CLASS_ROOT = CSSClassnames.ARTICLE;
 const DEFAULT_PLAY_INTERVAL = 10000; // 10s
 
 /**
- * #Article
- * A standard [HTML5 article](#). It might contain a [Header](#), one or more [Sections](#), and a [Footer](#).
+ * @description A standard [HTML5 article](#). It might contain a [Header](#), one or more [Sections](#), and a [Footer](#).
  * 
- * ```js
+ * @example
  * import Article from 'grommet/components/Article';
  * 
  * <Article>
@@ -37,7 +36,7 @@ const DEFAULT_PLAY_INTERVAL = 10000; // 10s
  *     </Headline>
  *   </Section>
  * </Article>
- * ```
+ * 
  */
 export default class Article extends Component {
 

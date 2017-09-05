@@ -12,8 +12,7 @@ const CLASS_ROOT = CSSClassnames.NUMBER_INPUT;
 const INPUT = CSSClassnames.INPUT;
 
 /**
- * #NumberInput
- * A number input in a web form. We have a separate component from the browser base so we can style it.
+ * @description A number input in a web form. We have a separate component from the browser base so we can style it.
  * ```js
  * import NumberInput from 'grommet/components/NumberInput';
  * 

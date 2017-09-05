@@ -12,8 +12,7 @@ const CLASS_ROOT = CSSClassnames.PASSWORD_INPUT;
 const INPUT = CSSClassnames.INPUT;
 
 /**
- * #PasswordInput
- * A text input in a web form. We have a separate component from the browser base so that we can toggle show/hide password.
+ * @description A text input in a web form. We have a separate component from the browser base so that we can toggle show/hide password.
  * 
  * ```js
  * import PasswordInput from 'grommet/components/PasswordInput';

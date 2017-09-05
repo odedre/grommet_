@@ -10,8 +10,7 @@ import SocialLinkedinIcon from './icons/base/SocialLinkedin';
 import SocialMailIcon from './icons/base/SocialMail';
 
 /**
- * #Social Share
- * A social media share icon button.
+ * @description A social media share icon button.
  * 
  * ```js
  * import SocialShare from 'grommet/components/SocialShare';

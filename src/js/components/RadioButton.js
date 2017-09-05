@@ -8,8 +8,7 @@ import CSSClassnames from '../utils/CSSClassnames';
 const CLASS_ROOT = CSSClassnames.RADIO_BUTTON;
 
 /**
- * #RadioButton
- * A radio button in a web form. We have a separate component from the browser base so we can style it.
+ * @description A radio button in a web form. We have a separate component from the browser base so we can style it.
  * 
  * ```js
  * import RadioButton from 'grommet/components/RadioButton';

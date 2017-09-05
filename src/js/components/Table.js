@@ -49,9 +49,8 @@ function immediateTableChildOnly(result, tableParent) {
 }
 
 /**
- * #Table
- * Table of items. The preferred method of populating rows in the Table is to use TableRows inside a child <tbody> element. Callers can also specify a [TableHeader](#) if a header is needed.
-
+ * @description Table of items. The preferred method of populating rows in the Table is to use TableRows inside a child <tbody> element. Callers can also specify a [TableHeader](#) if a header is needed.
+ * ```js
  * import Table from 'grommet/components/Table';
  * import TableRow from 'grommet/components/TableRow';
  * 
@@ -94,6 +93,7 @@ function immediateTableChildOnly(result, tableParent) {
  *     </TableRow>
  *   </tbody>
  * </Table>
+ * ```
  */
 export default class Table extends Component {
 

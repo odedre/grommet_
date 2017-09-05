@@ -11,8 +11,7 @@ const CLASS_ROOT = CSSClassnames.QUOTE;
 const BORDER_COLOR_INDEX = CSSClassnames.BORDER_COLOR_INDEX;
 
 /**
- * #Quote
- * A quote with a colored border.
+ * @description A quote with a colored border.
  *
  * ```js
  * import Quote from 'grommet/components/Quote';

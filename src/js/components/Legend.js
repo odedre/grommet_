@@ -26,16 +26,15 @@ function getMaxDecimalDigits(series) {
 }
 
 /**
- * #Legend
- * A legend, typically associated with a data visualization such as [Meter](#), [Distribution](#), [SunBurst](#), or [WorldMap](#).
+ * @description A legend, typically associated with a data visualization such as [Meter](#), [Distribution](#), [SunBurst](#), or [WorldMap](#).
  * 
- * ```js
+ * @example
  * import Legend from 'grommet/components/Legend';
  * 
  * <Legend series={[{"label": "Americas", "value": 40, "colorIndex": "graph-1", "onClick": "..."}, {"label": "Europe", "value": 20, "colorIndex": "unset", "onClick": "..."}, {"label": "Asia", "value": 15, "colorIndex": "graph-3", "onClick": "..."}]}
  *   total={true}
  *   units='B' />
- * ```
+ * 
  */
 
 export default class Legend extends Component {
@@ -305,11 +304,11 @@ Legend.propTypes = {
     onClick: PropTypes.func
   })).isRequired,
   /**
-   * @property {['medium', 'large']} size - The size of the Legend. Defaults to medium.
+   * @property {medium|large} size - The size of the Legend. Defaults to medium.
    */
   size: PropTypes.oneOf(['medium', 'large']),
   /**
-   * @property {[PropTypes.bool|PropTypes.node]} total - Whether to show the total of all values.
+   * @property {PropTypes.bool|PropTypes.node} total - Whether to show the total of all values.
    */
   total: PropTypes.oneOfType([
     PropTypes.bool,

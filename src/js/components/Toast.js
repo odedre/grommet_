@@ -121,8 +121,7 @@ ToastContents.childContextTypes = {
 };
 
 /**
- * #Toast
- * A terse notification that will only be displayed for a short period of time, overlaying whatever the user is currently doing.
+ * @description A terse notification that will only be displayed for a short period of time, overlaying whatever the user is currently doing.
  * 
  * ```js
  * import Toast from 'grommet/components/Toast';

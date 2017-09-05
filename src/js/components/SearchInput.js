@@ -18,8 +18,7 @@ const INPUT = CSSClassnames.INPUT;
 const FORM_FIELD = CSSClassnames.FORM_FIELD;
 
 /**
- * #SearchInput
- * An input field with a search control.
+ * @description An input field with a search control.
  * 
  * ```js
  * import SearchInput from 'grommet/components/SearchInput';

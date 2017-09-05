@@ -12,9 +12,9 @@ const CLASS_ROOT = CSSClassnames.ACCORDION;
 
 /**
  * 
- * # Accordion
- * A collapsible accordion component.
- * ``js
+ * @description A collapsible accordion component.
+ * 
+ * @example 
  * import Accordion from 'grommet/components/Accordion';
  * import AccordionPanel from 'grommet/components/AccordionPanel';
  * 

@@ -15,10 +15,9 @@ const CLASS_ROOT = CSSClassnames.BOX;
 const BACKGROUND_COLOR_INDEX = CSSClassnames.BACKGROUND_COLOR_INDEX;
 
 /**
- * #Box
- * General purpose flexible box layout. This supports many, but not all, of the [flexbox](#) capabilities.
+ * @description General purpose flexible box layout. This supports many, but not all, of the [flexbox](#) capabilities.
  * 
- * ```js
+ * @example
  * import Box from 'grommet/components/Box';
  * 
  * <Box direction='row'
@@ -55,7 +54,7 @@ const BACKGROUND_COLOR_INDEX = CSSClassnames.BACKGROUND_COLOR_INDEX;
  *     <Value value={3} />
  *   </Box>
  * </Box>
- * ```
+ * 
  */
 export default class Box extends Component {
 
@@ -352,16 +351,16 @@ Box.propTypes = {
   a11yTitle: PropTypes.string,
   announce: PropTypes.bool,
   /**
-   * @property {['start', 'center', 'end', 'baseline', 'stretch'])} align - How to align the contents along the cross axis.
+   * @property {start|center|end|baseline|stretch} align - How to align the contents along the cross axis.
    */
   align: PropTypes.oneOf(['start', 'center', 'end', 'baseline', 'stretch']),
   /**
-   * @property {PropTypes.bool} alignContent - How to align the contents when there is extra space in the cross axis. Defaults to stretch
+   * @property {start|center|end|between|around|stretch} alignContent - How to align the contents when there is extra space in the cross axis. Defaults to stretch
    */
   alignContent: PropTypes.oneOf(['start', 'center', 'end', 'between',
     'around', 'stretch']),
   /**
-   * @property {['start', 'center', 'end', 'stretch']} alignSelf - How to align within its container along the cross axis.
+   * @property {start|center|end|stretch} alignSelf - How to align within its container along the cross axis.
    */  
   alignSelf: PropTypes.oneOf(['start', 'center', 'end', 'stretch']),
   /**
@@ -370,7 +369,7 @@ Box.propTypes = {
   appCentered: PropTypes.bool,
   backgroundImage: PropTypes.string,
   /**
-   * @property {[SIZES]} basis - Whether to use a fixed or relative size within its container.
+   * @property {SIZES} basis - Whether to use a fixed or relative size within its container.
    */
   basis: PropTypes.oneOf(SIZES),
   /**
@@ -379,7 +378,7 @@ Box.propTypes = {
   colorIndex: PropTypes.string,
   containerClassName: PropTypes.string,
   /**
-   * @property {['row', 'column']} direction - The orientation to layout the child components in. Defaults to column.
+   * @property {row|column} direction - The orientation to layout the child components in. Defaults to column.
    */
   direction: PropTypes.oneOf(['row', 'column']),
   /**
@@ -387,11 +386,11 @@ Box.propTypes = {
    */
   focusable: PropTypes.bool,
   /**
-   * @property {['grow', 'shrink', true, false]} flex - Whether flex-grow and/or flex-shrink is true.
+   * @property {grow|shrink|true|false} flex - Whether flex-grow and/or flex-shrink is true.
    */
   flex: PropTypes.oneOf(['grow', 'shrink', true, false]),
   /**
-   * @property {[PropTypes.bool|PropTypes.string|PropTypes.shape]} full - Whether the width and/or height should take the full viewport size.]
+   * @property {PropTypes.bool|PropTypes.string|PropTypes.shape} full - Whether the width and/or height should take the full viewport size.]
    */
   full: PropTypes.oneOfType(
     [
@@ -410,11 +409,11 @@ Box.propTypes = {
     // remove in 1.0?
   onClick: PropTypes.func,
   /**
-   * @property {['start'| 'center'| 'between'| 'end'| 'around']} justify - How to align the contents along the main axis.
+   * @property {start|center|between|end|around} justify - How to align the contents along the main axis.
    */
   justify: PropTypes.oneOf(['start', 'center', 'between', 'end', 'around']),
   /**
-   * @property {none|small|medium|large|{...}} margin - The amount of margin around the box. An object can be specified to distinguish horizontal margin, vertical margin, and margin on a particular side of the box: {horizontal: none|small|medium|large, vertical: none|small|medium|large, top|left|right|bottom: none|small|medium|large}. Defaults to none.
+   * @property {none|small|medium|large} margin - The amount of margin around the box. An object can be specified to distinguish horizontal margin, vertical margin, and margin on a particular side of the box: {horizontal: none|small|medium|large, vertical: none|small|medium|large, top|left|right|bottom: none|small|medium|large}. Defaults to none.
    */
   margin: PropTypes.oneOfType([
     PropTypes.oneOf(MARGIN_SIZES),
@@ -428,7 +427,7 @@ Box.propTypes = {
     })
   ]),
   /**
-   * @property {none|small|medium|large|{...}} pad - The amount of padding to put around the contents. An object can be specified to distinguish horizontal padding, vertical padding, and padding between child components: {horizontal: none|small|medium|large, vertical: none|small|medium|large, between: none|small|medium|large}. Defaults to none. Padding set using between only affects components based on the direction set (adds horizontal padding between components for row, or vertical padding between components for column).
+   * @property {none|small|medium|large} pad - The amount of padding to put around the contents. An object can be specified to distinguish horizontal padding, vertical padding, and padding between child components: {horizontal: none|small|medium|large, vertical: none|small|medium|large, between: none|small|medium|large}. Defaults to none. Padding set using between only affects components based on the direction set (adds horizontal padding between components for row, or vertical padding between components for column).
    */
   pad: PropTypes.oneOfType([
     PropTypes.oneOf(PAD_SIZES),
@@ -453,12 +452,12 @@ Box.propTypes = {
   responsive: PropTypes.bool,
   role: PropTypes.string,
   /**
-   * @property {['top', 'bottom', 'left', 'right', 'horizontal', 'vertical', 'all', 'none']} separator - Add a separator.
+   * @property {top|bottom|left|right|horizontal|vertical|all|none} separator - Add a separator.
    */
   separator: PropTypes.oneOf(['top', 'bottom', 'left', 'right',
     'horizontal', 'vertical', 'all', 'none']),
   /**
-   * @property {} size - The width of the Box. Defaults to auto. An object can be specified to distinguish width, height (with additional min and max options for width and height). E.g. {height: small, width: {max: large}}.
+   * @property {auto|xsmall|small|medium|large|xlarge|xxlarge|full|PropTypes.object} size - The width of the Box. Defaults to auto. An object can be specified to distinguish width, height (with additional min and max options for width and height). E.g. {height: small, width: {max: large}}.
    */
     size: PropTypes.oneOfType([
     PropTypes.oneOf(['auto', 'xsmall', 'small', 'medium', 'large',
@@ -486,12 +485,12 @@ Box.propTypes = {
    */
   tag: PropTypes.string,
   /**
-   * @property {['left', 'center', 'right']} textAlign - Set text-align for the Box contents.
+   * @property {left|center|right} textAlign - Set text-align for the Box contents.
 
    */
   textAlign: PropTypes.oneOf(['left', 'center', 'right']),
   /**
-   * @property {[PropTypes.node|PropTypes.string]} texture - A texture image URL to apply to the background.
+   * @property {PropTypes.node|PropTypes.string} texture - A texture image URL to apply to the background.
    */
   texture: PropTypes.oneOfType([
     PropTypes.node,

@@ -9,8 +9,7 @@ import CSSClassnames from '../utils/CSSClassnames';
 const CLASS_ROOT = CSSClassnames.SIDEBAR;
 
 /**
- * #Sidebar
- * A full height, fixed width container. Usually a Sidebar is placed inside a [Split](#) component. A typical usage is for primary navigation, where it typically contains a [Header](#) and a [Menu](#). The Sidebar may or may not be always visible. If it comes and goes, it is typically controlled via a Title component inside a [Header](#) component residing in the other side of the Split.
+ * @description A full height, fixed width container. Usually a Sidebar is placed inside a [Split](#) component. A typical usage is for primary navigation, where it typically contains a [Header](#) and a [Menu](#). The Sidebar may or may not be always visible. If it comes and goes, it is typically controlled via a Title component inside a [Header](#) component residing in the other side of the Split.
  * 
  * Properties for [Box](#) are also available.
  * 

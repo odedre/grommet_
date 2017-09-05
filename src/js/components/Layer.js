@@ -152,10 +152,9 @@ LayerContents.childContextTypes = {
 };
 
 /**
- * #Layer
- * A modal overlay. This could contain a [Form](#) or an [Article](#).
+ * @description A modal overlay. This could contain a [Form](#) or an [Article](#).
  * 
- * ```js
+ * @example
  * import Layer from 'grommet/components/Layer';
  * 
  * <Layer closer={true}
@@ -163,7 +162,7 @@ LayerContents.childContextTypes = {
  *   onClose={...}>
  *   <SampleArticle />
  * </Layer>
- * ```
+ * 
  */
 export default class Layer extends Component {
 
@@ -316,7 +315,7 @@ export default class Layer extends Component {
 
 Layer.propTypes = {
   /**
-   * @property {['center', 'top', 'bottom', 'left', 'right']} align - Which direction the layer contents should emanate from.
+   * @property {center|top|bottom|left|right} align - Which direction the layer contents should emanate from.
    */
   align: PropTypes.oneOf(['center', 'top', 'bottom', 'left', 'right']),
   /**

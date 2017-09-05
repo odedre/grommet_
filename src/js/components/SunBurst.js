@@ -15,8 +15,7 @@ const UNIT_FACTOR = baseUnit * 0.75;
 const PAD_FACTOR = baseUnit * 8;
 
 /**
- * #SunBurst
- * A SunBurst visualization.
+ * @description A SunBurst visualization.
  * 
  * ```js
  * import SunBurst from 'grommet/components/SunBurst';

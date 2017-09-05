@@ -13,10 +13,9 @@ const CLASS_ROOT = CSSClassnames.HERO;
 const BACKGROUND_COLOR_INDEX = CSSClassnames.BACKGROUND_COLOR_INDEX;
 
 /**
- * #Hero
- * A Hero image or video, overlaid with text.
+ * @description A Hero image or video, overlaid with text.
  * 
- * ```js
+ * @example
  * import Hero from 'grommet/components/Hero';
  * 
  * <Hero background={<Image src='/img/carousel-1.png'
@@ -38,7 +37,7 @@ const BACKGROUND_COLOR_INDEX = CSSClassnames.BACKGROUND_COLOR_INDEX;
  *     </Box>
  *   </Box>
  * </Hero>
- * ```
+ * 
  */
 export default class Hero extends Component {
 
@@ -258,7 +257,7 @@ Hero.propTypes = {
    */
   backgroundColorIndex: PropTypes.string,
   /**
-   * @property {['small', 'medium', 'large']} size - Size of the Hero. Defaults to medium.
+   * @property {small|medium|large} size - Size of the Hero. Defaults to medium.
    */
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   // below props are all deprecated

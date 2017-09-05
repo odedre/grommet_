@@ -189,8 +189,7 @@ Parts.defaultProps = {
 };
 
 /**
- * #Topology
- * Visualize structure and connectivity.
+ * @description Visualize structure and connectivity.
  * 
  * 
  * import Topology from 'grommet/components/Topology';

@@ -23,8 +23,7 @@ function _showField(field, fields) {
 
 /**
  * 
- * #Timestamp
- * A localized timestamp.
+ * @description A localized timestamp.
  * 
  * ```js
  * import Timestamp from 'grommet/components/Timestamp';

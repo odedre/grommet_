@@ -11,8 +11,7 @@ const CLASS_ROOT = CSSClassnames.MAP;
 const COLOR_INDEX = CSSClassnames.COLOR_INDEX;
 
 /**
- * #Map
- * Shows a graph of nodes and links between them.
+ * @description Shows a graph of nodes and links between them.
  * 
  * ```js
  * import Map from 'grommet/components/Map';

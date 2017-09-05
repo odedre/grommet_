@@ -9,8 +9,7 @@ import CSSClassnames from '../utils/CSSClassnames';
 const CLASS_ROOT = CSSClassnames.TABS;
 
 /**
- * #Tabs
- * A tabular view component. The Tabs component contains one or more Tab components.
+ * @description A tabular view component. The Tabs component contains one or more Tab components.
  * 
  * ```js
  * import Tabs from 'grommet/components/Tabs';

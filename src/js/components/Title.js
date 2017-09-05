@@ -10,8 +10,7 @@ import CSSClassnames from '../utils/CSSClassnames';
 const CLASS_ROOT = CSSClassnames.TITLE;
 
 /**
- * #Title
- * Title component usually rendered inside a Header.
+ * @description Title component usually rendered inside a Header.
  * 
  * ```js
  * import Title from 'grommet/components/Title';

@@ -8,10 +8,9 @@ import CSSClassnames from '../utils/CSSClassnames';
 const CLASS_ROOT = CSSClassnames.PARAGRAPH;
 
 /**
- * #Paragraph
- * A paragraph of text
+ * @description A paragraph of text
  * 
-
+ * ```js
  * import Paragraph from 'grommet/components/Paragraph';
  * 
  * <Paragraph>
@@ -19,6 +18,7 @@ const CLASS_ROOT = CSSClassnames.PARAGRAPH;
  * gets a fresh start in the New Zealand countryside. He quickly finds himself
  * at home with his new foster family
  * </Paragraph>
+ * ```
  */
 export default class Paragraph extends Component {
   render () {

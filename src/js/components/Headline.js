@@ -8,16 +8,15 @@ import CSSClassnames from '../utils/CSSClassnames';
 const CLASS_ROOT = CSSClassnames.HEADLINE;
 
 /**
- * #Headline
- * Headline text, usually used in marketing pages.
+ * @description Headline text, usually used in marketing pages.
  * 
- * ```js
+ * @example
  * import Headline from 'grommet/components/Headline';
  * 
  * <Headline strong={true}>
  *   Sample Headline
  * </Headline>
- * ```
+ * 
  */
 export default class Headline extends Component {
   render () {
@@ -45,15 +44,15 @@ export default class Headline extends Component {
 
 Headline.propTypes = {
   /**
-   * @property {['start', 'center', 'end']} align - The horizontal alignment of the Headline. Defaults to start.
+   * @property {start|center|end} align - The horizontal alignment of the Headline. Defaults to start.
    */
   align: PropTypes.oneOf(['start', 'center', 'end']),
   /**
-   * @property {['none', 'small', 'medium', 'large']} margin - The vertical margin below the Headline. Defaults to medium.
+   * @property {none|small|medium|large} margin - The vertical margin below the Headline. Defaults to medium.
    */
   margin: PropTypes.oneOf(['none', 'small', 'medium', 'large']),
   /**
-   * @property {['small', 'medium', 'large', 'xlarge']} size - The size of the Headline. Defaults to medium. Note: xlarge should only be used for short, single word situations.
+   * @property {small|medium|large|xlarge} size - The size of the Headline. Defaults to medium. Note: xlarge should only be used for short, single word situations.
    */
   size: PropTypes.oneOf(['small', 'medium', 'large', 'xlarge']),
   /**

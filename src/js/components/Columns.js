@@ -11,10 +11,9 @@ import Responsive from '../utils/Responsive';
 const CLASS_ROOT = CSSClassnames.COLUMNS;
 
 /**
- * #Columns
- * Organize children into multiple components based on available width.
+ * @description Organize children into multiple components based on available width.
  * 
- * ```js
+ * @example
  * import Columns from 'grommet/components/Columns';
  * 
  * <Columns responsive={false}
@@ -32,7 +31,7 @@ const CLASS_ROOT = CSSClassnames.COLUMNS;
  *     Box 2
  *   </Box>
  * </Columns>
- * ```
+ * 
  */
 export default class Columns extends Component {
 
@@ -286,7 +285,7 @@ export default class Columns extends Component {
 
 Columns.propTypes = {
   /**
-   * @property {['start', 'center', 'between', 'end']} justify - How to align the contents along the main axis.
+   * @property {start|center|between|end} justify - How to align the contents along the main axis.
    */
   justify: PropTypes.oneOf(['start', 'center', 'between', 'end']),
   margin: PropTypes.oneOf(['small', 'medium', 'large']),
@@ -303,7 +302,7 @@ Columns.propTypes = {
    */
   responsive: PropTypes.bool,
   /**
-   * @property {['small', 'medium', 'large']} size - The width of each column. Defaults to medium.
+   * @property {small|medium|large} size - The width of each column. Defaults to medium.
    */
   size: PropTypes.oneOf(['small', 'medium', 'large'])
 };

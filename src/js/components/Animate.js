@@ -124,10 +124,9 @@ AnimateChild.defaultProps = {
 };
 
 /**
- * #Animate
- * An animation wrapper to transition components in & out.
+ * @description An animation wrapper to transition components in & out.
  * 
- * ```js
+ * @example
  *  import Animate from 'grommet/components/Animate';
  * 
  * <Box pad={{"between": "medium"}}
@@ -146,7 +145,7 @@ AnimateChild.defaultProps = {
  *     </Box>
  *   </Animate>
  * </Box>
- * ```
+ * 
  */
 
 export default class Animate extends Component {

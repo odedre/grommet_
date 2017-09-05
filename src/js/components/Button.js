@@ -26,10 +26,9 @@ function getHoverModifier(hoverIndicator) {
 }
 
 /**
- * #Button
- * A button. We have a separate component from the browser base so we can style it.
+ * @description A button. We have a separate component from the browser base so we can style it.
  * 
- * ```js
+ * @example
  * import Button from 'grommet/components/Button';
  * 
  * <Button icon={<Edit />}
@@ -42,7 +41,7 @@ function getHoverModifier(hoverIndicator) {
  *   critical={true}
  *   plain={true}
  *   path='/' />
- * ```
+ * 
  */
 export default class Button extends Component {
 
@@ -252,7 +251,7 @@ Button.propTypes = {
    */
   label: PropTypes.node,
   /**
-   * @property {['push', 'replace']} method - Valid only when used with path. Indicates whether the browser history should be appended to or replaced. The default is push.
+   * @property {push|replace} method - Valid only when used with path. Indicates whether the browser history should be appended to or replaced. The default is push.
    */
   method: PropTypes.oneOf(['push', 'replace']),
   /**
@@ -277,7 +276,7 @@ Button.propTypes = {
    */
   secondary: PropTypes.bool,
   /**
-   * @property {['button', 'reset', 'submit']} type - The type of button. Set the type to submit for the default button on forms. Defaults to button.
+   * @property {button|reset|submit} type - The type of button. Set the type to submit for the default button on forms. Defaults to button.
    */
   type: PropTypes.oneOf(['button', 'reset', 'submit'])
 };
